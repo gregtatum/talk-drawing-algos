@@ -2,7 +2,6 @@
 
 These are the examples for my talk "Drawing and Sculpting with Algorithms". The talk features live coding of examples.
 
- * Slides TBD
  * Video TBD
 
 ## Running the example
@@ -11,12 +10,6 @@ These are the examples for my talk "Drawing and Sculpting with Algorithms". The 
  * `git clone git@github.com:gregtatum/talk-draw-algos.git`
  * `cd talk-draw-algos`
  * `npm install`
- * Next run the commands to start either the beginning example, or the complete one.
+ * `npm start`
 
-## Example 1 - Plane
- * `npm run start-1`
- * `npm run start-1-complete`
-
- ## Example 2 - Field Function
-  * `npm run start-2`
-  * `npm run start-2-complete`
+Then visit the URLs printed out to the terminal to view the examples.
