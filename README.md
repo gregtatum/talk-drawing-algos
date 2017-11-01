@@ -1,18 +1,22 @@
-# WebGL - Beyond the DOM
+# Drawing and Sculpting with Algorithms
 
-The web was built on documents rendered using the DOM (Document Object Model.) WebGL opens up a whole new class of applications that are beyond the DOM with gaming, art, and entire virtual worlds. This talk dives into the basics of how WebGL works with a live coding demo showing off the basics of shaders.
+These are the examples for my talk "Drawing and Sculpting with Algorithms". The talk features live coding of examples.
 
- * [Slides](https://docs.google.com/presentation/d/1tvzqCV9oDs8N7Ytr0mtW4jvYdjs7oOitAicvyrwNAHc)
- * [Live coding demo](https://youtu.be/lBKHKGtFfwY)
+ * Slides TBD
+ * Video TBD
 
 ## Running the example
 
  * You need both [npm](https://nodejs.org/) and [git](https://www.google.com/search?q=install+git), then run the following from the command line.
- * `git clone git@github.com:gregtatum/talk-webgl-beyond-dom.git`
- * `cd talk-webgl-beyond-dom`
+ * `git clone git@github.com:gregtatum/talk-draw-algos.git`
+ * `cd talk-draw-algos`
  * `npm install`
- * `npm start`
+ * Next run the commands to start either the beginning example, or the complete one.
 
- To view the complete example run:
+## Example 1 - Plane
+ * `npm run start-1`
+ * `npm run start-1-complete`
 
- * `npm run start-complete`
+ ## Example 2 - Field Function
+  * `npm run start-2`
+  * `npm run start-2-complete`

@@ -4,14 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "budo --host=localhost example.js --live",
-    "start-complete": "budo --host=localhost example-complete.js --live"
+    "start": "run-p start-1 start-2 start-3",
+    "start-1": "budo -p 9001 --host=localhost 1-plane/example.js --live",
+    "start-1-complete": "budo -p 9001 --host=localhost 1-plane/example-complete.js --live",
+    "start-2": "budo -p 9002 --host=localhost 2-field --live",
+    "start-3": "budo -p 9003 --host=localhost 3-subdivide --live"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
   "devDependencies": {
+    "geo-3d-box": "^2.0.2",
+    "gl-catmull-clark": "^1.0.0",
+    "gl-mat3": "^1.0.0",
     "gl-mat4": "1.1.4",
+    "gl-vec3": "^1.0.3",
+    "glsl-hsl2rgb": "^1.1.0",
+    "glsl-noise": "0.0.0",
+    "glsl-specular-cook-torrance": "^2.0.1",
     "glslify": "6.0.1",
-    "regl": "^1.3.0"
+    "matcap": "0.0.2",
+    "npm-run-all": "^4.1.1",
+    "orbit-controls": "^1.2.0",
+    "perspective-camera": "^2.0.1",
+    "regl": "^1.3.0",
+    "resl": "^1.0.3"
   }
 }
